@@ -15,7 +15,7 @@ const GridLength: NextPage = () => {
           display: grid;
           grid-template:
             "header header header" 100px
-            "left   main   right" 1fr
+            "left   main   right" auto
             "footer footer footer" 300px
             / 2fr 1fr 3fr;
         }

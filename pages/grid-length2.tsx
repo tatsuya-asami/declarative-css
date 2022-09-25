@@ -3,11 +3,16 @@ import type { NextPage } from "next";
 const GridLength2: NextPage = () => {
   return (
     <div className="wrapper">
-      <div className="header">header</div>
+      <div className="header">
+        header
+        <br />
+      </div>
       <div className="left">left</div>
       <div className="centerTop">centerTop</div>
       <div className="centerMiddle">centerMiddle</div>
-      <div className="centerBottom">centerBottom</div>
+      <div className="centerBottom">
+        centerBottom centerBottom centerBottom centerBottom centerBottom
+      </div>
       <div className="right">right</div>
       <div className="footer">footer</div>
 
@@ -16,11 +21,11 @@ const GridLength2: NextPage = () => {
           height: 100vh;
           display: grid;
           grid-template:
-            "left header       header" 100px
+            "left header       header" minmax(50px, auto)
             "left centerTop    right" 1fr
             "left centerMiddle right" 2fr
             "left centerBottom right" 1fr
-            "left centerBottom footer" 300px
+            "left footer       footer" 300px
             / 300px 1fr 3fr;
           gap: 10px 20px;
         }

@@ -18,7 +18,7 @@ const GridLength2: NextPage = () => {
           grid-template:
             "left header       header" 100px
             "left centerTop    right" 1fr
-            "left centerMiddle right" 3fr
+            "left centerMiddle right" 2fr
             "left centerBottom right" 1fr
             "left centerBottom footer" 300px
             / 300px 1fr 3fr;
@@ -38,11 +38,11 @@ const GridLength2: NextPage = () => {
         }
         .centerMiddle {
           grid-area: centerMiddle;
-          background-color: black;
+          background-color: yellow;
         }
         .centerBottom {
           grid-area: centerBottom;
-          background-color: white;
+          background-color: lightgreen;
         }
         .right {
           grid-area: right;
